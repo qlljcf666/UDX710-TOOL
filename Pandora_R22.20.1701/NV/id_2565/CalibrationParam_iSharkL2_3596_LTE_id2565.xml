@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ITEM name="LTE_Cali_common" id="2565" type="STRUCT" desc="">
+    <ITEM name="LTE_CaliParam_version" type="SHORT" value="0x7" desc=""/>
+    <ITEM name="LTE_CaliParam_flag" type="SHORT" value="0x0" desc=""/>
+    <ITEM name="LTE_CALI_AFC_CONTROL" type="STRUCT" desc="">
+        <ITEM name="TCXO_CAL" type="STRUCT" desc="">
+            <ITEM name="AFC0" type="SHORT" value="0x29A6" desc=""/>
+            <ITEM name="AFC_K" type="SHORT" value="0x2A" desc=""/>
+            <ITEM name="reserved" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="reserved(1)" type="SHORT" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="DCXO_CAL" type="STRUCT" desc="">
+            <ITEM name="DCXO_CAFC_slope" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="CDAC" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="CAFC" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="reserved" type="SHORT" value="0x0" desc=""/>
+        </ITEM>
+    </ITEM>
+    <ITEM name="LTE_CALI_Reserved" type="STRUCT" desc="">
+        <ITEM name="reserved[0]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[1]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[2]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[3]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[4]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[5]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[6]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[7]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[8]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[9]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[10]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[11]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[12]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[13]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[14]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[15]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[16]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[17]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[18]" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved[19]" type="SHORT" value="0x0" desc=""/>
+    </ITEM>
+</ITEM>

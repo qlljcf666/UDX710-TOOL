@@ -1,0 +1,28 @@
+[2025-08-15 14:54:51:409][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash09 -> 0:nr_nrphy:0x300000:E:\nv\Download_R27.23.0101\Bin\ReadFlash\SC9600_Orca_NR_phy_modem-sign.bin
+[2025-08-15 14:54:51:410][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash10 -> 0:nr_nrdsp1:0x200000:E:\nv\Download_R27.23.0101\Bin\ReadFlash\Orca_NR_phy_NR_XC0_DSP-sign.bin
+[2025-08-15 14:54:51:410][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash11 -> 0:nr_nrdsp2:0x200000:E:\nv\Download_R27.23.0101\Bin\ReadFlash\Orca_NR_phy_NR_XC1_DSP-sign.bin
+[2025-08-15 14:54:51:411][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash12 -> 0:nr_deltanv:0x100000:E:\nv\Download_R27.23.0101\Bin\ReadFlash\deltanv.bin
+[2025-08-15 14:54:51:411][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash13 -> 0:recovery:0x1200000:E:\nv\Download_R27.23.0101\Bin\ReadFlash\boot-sign.img
+[2025-08-15 14:54:51:412][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash14 -> 0:recoveryfs:0xC00000:E:\nv\Download_R27.23.0101\Bin\ReadFlash\recovery-sign.squashfs
+[2025-08-15 14:54:51:412][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash15 -> 0:system:0x1E00000:E:\nv\Download_R27.23.0101\Bin\ReadFlash\root-sign.squashfs
+[2025-08-15 14:54:51:413][Config      ][3 - Information] Set String: ResearchDownload.ini -> ReadFlash -> flash16 -> 0:splloader:0xFFFFFFFF:E:\nv\Download_R27.23.0101\Bin\ReadFlash\u-boot-spl-16k-sign.bin
+[2025-08-15 14:54:51:414][DLFramework ][3 - Information] AddBackupFiles( NV_NR )
+[2025-08-15 14:54:51:414][Config      ][3 - Information] Set String: ResearchDownload.ini -> Download_Packet -> packet -> C:\Users\ZH\下载\udx710_module+initgc+console+sec-user-native_FDDNRSEC_21A.pac
+[2025-08-15 14:54:51:415][Config      ][3 - Information] Set String: ResearchDownload.ini -> GUI -> PacketMode -> 1
+[2025-08-15 14:54:51:415][DLFramework ][3 - Information] GetProperty( DLFW_ATTR_CHECK_DL_FILES )
+[2025-08-15 14:54:51:416][Config      ][3 - Information] Default String: ResearchDownload.ini -> GUI -> Title -> 
+[2025-08-15 14:54:51:416][Config      ][3 - Information] Default String: ResearchDownload.ini -> GUI -> ShowVer -> 1
+[2025-08-15 14:55:19:459][DLFramework ][3 - Information] Packet Path : C:\Users\ZH\下载\C2000-518_1.9.5.n0.c8固件.pac
+[2025-08-15 14:55:19:459][DLFramework ][3 - Information] Unpack Dir : E:\nv\Download_R27.23.0101\Bin\ImageFiles
+[2025-08-15 14:55:19:459][DLFramework ][3 - Information] Open( C:\Users\ZH\下载\C2000-518_1.9.5.n0.c8固件.pac )
+[2025-08-15 14:55:19:459][DLFramework ][3 - Information] Unpacket( C:\Users\ZH\下载\C2000-518_1.9.5.n0.c8固件.pac )
+[2025-08-15 14:55:19:459][DLFramework ][3 - Information] Image Files Dir : E:\nv\Download_R27.23.0101\Bin\ImageFiles\_DLFiles_240_D34CC_1
+[2025-08-15 14:55:19:459][DLFramework ][3 - Information] Pac XML Path : E:\nv\Download_R27.23.0101\Bin\ImageFiles\_DLFiles_240_D34CC_1\udx710-module.xml
+[2025-08-15 14:55:20:739][DLFramework ][1 - Error      ] [PK3035]Bin packet version is not support!  (Error code = 3103)
+[2025-08-15 14:57:39:826][DLFramework ][3 - Information] Packet Path : C:\Users\ZH\下载\C2000-518_1.9.5.n0.c8.pac
+[2025-08-15 14:57:39:826][DLFramework ][3 - Information] Unpack Dir : E:\nv\Download_R27.23.0101\Bin\ImageFiles
+[2025-08-15 14:57:39:826][DLFramework ][3 - Information] Open( C:\Users\ZH\下载\C2000-518_1.9.5.n0.c8.pac )
+[2025-08-15 14:57:39:828][DLFramework ][3 - Information] Unpacket( C:\Users\ZH\下载\C2000-518_1.9.5.n0.c8.pac )
+[2025-08-15 14:57:39:828][DLFramework ][3 - Information] Image Files Dir : E:\nv\Download_R27.23.0101\Bin\ImageFiles\_DLFiles_240_D34CC_1
+[2025-08-15 14:57:39:828][DLFramework ][3 - Information] Pac XML Path : E:\nv\Download_R27.23.0101\Bin\ImageFiles\_DLFiles_240_D34CC_1\udx710-module.xml
+[2025-08-15 14:57:40:854][DLFramework ][1 - Error      ] [PK3035]Bin packet version is not support!  (Error code = 3103)

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ITEM name="gsm_agc_cali_param" id="4" type="STRUCT" desc="">
+    <ITEM name="agc_cali_param_pri" type="STRUCT" desc="">
+        <ITEM name="cali_HB" type="STRUCT" desc="">
+            <ITEM name="cali_point_num" type="SHORT" value="0x5" desc=""/>
+            <ITEM name="comp_point" type="SHORT" value="0x2" desc="Compensation Gain index HB"/>
+            <ITEM name="max_rx_gain_index" type="SHORT" value="0xA" desc=""/>
+            <ITEM name="rssi_lower_limit" type="SHORT" value="0x4B" desc=""/>
+            <ITEM name="rssi_upper_limit" type="SHORT" value="0x82" desc=""/>
+            <ITEM name="cali_point0" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0xA" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFB0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point1" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0xB" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFB0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point2" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0xF" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFBA" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point3" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x12" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFC4" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point4" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x15" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFCE" desc=""/>
+            </ITEM>
+            <ITEM name="reserved" type="ARRAY" subtype="SHORT" count="12" desc="">
+                <ITEM name="reserved[0]" value="0x0" desc=""/>
+                <ITEM name="reserved[1]" value="0x0" desc=""/>
+                <ITEM name="reserved[2]" value="0x0" desc=""/>
+                <ITEM name="reserved[3]" value="0x0" desc=""/>
+                <ITEM name="reserved[4]" value="0x0" desc=""/>
+                <ITEM name="reserved[5]" value="0x0" desc=""/>
+                <ITEM name="reserved[6]" value="0x0" desc=""/>
+                <ITEM name="reserved[7]" value="0x0" desc=""/>
+                <ITEM name="reserved[8]" value="0x0" desc=""/>
+                <ITEM name="reserved[9]" value="0x0" desc=""/>
+                <ITEM name="reserved[10]" value="0x0" desc=""/>
+                <ITEM name="reserved[11]" value="0x0" desc=""/>
+            </ITEM>
+        </ITEM>
+        <ITEM name="cali_LB" type="STRUCT" desc="">
+            <ITEM name="cali_point_num" type="SHORT" value="0x5" desc=""/>
+            <ITEM name="comp_point" type="SHORT" value="0x2" desc="Compensation Gain index LB"/>
+            <ITEM name="max_rx_gain_index" type="SHORT" value="0x9" desc=""/>
+            <ITEM name="rssi_lower_limit" type="SHORT" value="0x4B" desc=""/>
+            <ITEM name="rssi_upper_limit" type="SHORT" value="0x82" desc=""/>
+            <ITEM name="cali_point0" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x9" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFB0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point1" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0xB" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFB0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point2" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0xD" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFBA" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point3" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x10" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFC4" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point4" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x14" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0xFFCE" desc=""/>
+            </ITEM>
+            <ITEM name="reserved" type="ARRAY" subtype="SHORT" count="12" desc="">
+                <ITEM name="reserved[0]" value="0x0" desc=""/>
+                <ITEM name="reserved[1]" value="0x0" desc=""/>
+                <ITEM name="reserved[2]" value="0x0" desc=""/>
+                <ITEM name="reserved[3]" value="0x0" desc=""/>
+                <ITEM name="reserved[4]" value="0x0" desc=""/>
+                <ITEM name="reserved[5]" value="0x0" desc=""/>
+                <ITEM name="reserved[6]" value="0x0" desc=""/>
+                <ITEM name="reserved[7]" value="0x0" desc=""/>
+                <ITEM name="reserved[8]" value="0x0" desc=""/>
+                <ITEM name="reserved[9]" value="0x0" desc=""/>
+                <ITEM name="reserved[10]" value="0x0" desc=""/>
+                <ITEM name="reserved[11]" value="0x0" desc=""/>
+            </ITEM>
+        </ITEM>
+    </ITEM>
+    <ITEM name="agc_specified_comp_ch_pri" type="STRUCT" desc="">
+        <ITEM name="cal_ch_gsm900" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_gsm900[0]" value="0xFFD1" desc=""/>
+            <ITEM name="cal_ch_gsm900[1]" value="0xFFE5" desc=""/>
+            <ITEM name="cal_ch_gsm900[2]" value="0xA" desc=""/>
+            <ITEM name="cal_ch_gsm900[3]" value="0x3E" desc=""/>
+            <ITEM name="cal_ch_gsm900[4]" value="0x4D" desc=""/>
+            <ITEM name="cal_ch_gsm900[5]" value="0x61" desc=""/>
+            <ITEM name="cal_ch_gsm900[6]" value="0x7A" desc=""/>
+            <ITEM name="cal_ch_gsm900[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[9]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="cal_ch_dcs" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_dcs[0]" value="0x200" desc=""/>
+            <ITEM name="cal_ch_dcs[1]" value="0x214" desc=""/>
+            <ITEM name="cal_ch_dcs[2]" value="0x250" desc=""/>
+            <ITEM name="cal_ch_dcs[3]" value="0x2A0" desc=""/>
+            <ITEM name="cal_ch_dcs[4]" value="0x2FA" desc=""/>
+            <ITEM name="cal_ch_dcs[5]" value="0x345" desc=""/>
+            <ITEM name="cal_ch_dcs[6]" value="0x375" desc=""/>
+            <ITEM name="cal_ch_dcs[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[9]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="cal_ch_pcs" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_pcs[0]" value="0x202" desc=""/>
+            <ITEM name="cal_ch_pcs[1]" value="0x20C" desc=""/>
+            <ITEM name="cal_ch_pcs[2]" value="0x239" desc=""/>
+            <ITEM name="cal_ch_pcs[3]" value="0x27A" desc=""/>
+            <ITEM name="cal_ch_pcs[4]" value="0x2CA" desc=""/>
+            <ITEM name="cal_ch_pcs[5]" value="0x31F" desc=""/>
+            <ITEM name="cal_ch_pcs[6]" value="0x328" desc=""/>
+            <ITEM name="cal_ch_pcs[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[9]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="cal_ch_gsm850" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_gsm850[0]" value="0x82" desc=""/>
+            <ITEM name="cal_ch_gsm850[1]" value="0x96" desc=""/>
+            <ITEM name="cal_ch_gsm850[2]" value="0xA5" desc=""/>
+            <ITEM name="cal_ch_gsm850[3]" value="0xB4" desc=""/>
+            <ITEM name="cal_ch_gsm850[4]" value="0xC3" desc=""/>
+            <ITEM name="cal_ch_gsm850[5]" value="0xD7" desc=""/>
+            <ITEM name="cal_ch_gsm850[6]" value="0xFA" desc=""/>
+            <ITEM name="cal_ch_gsm850[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[9]" value="0x0" desc=""/>
+        </ITEM>
+    </ITEM>
+    <ITEM name="agc_cali_param_div" type="STRUCT" desc="">
+        <ITEM name="cali_HB" type="STRUCT" desc="">
+            <ITEM name="cali_point_num" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="comp_point" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="max_rx_gain_index" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="rssi_lower_limit" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="rssi_upper_limit" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="cali_point0" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point1" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point2" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point3" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point4" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="reserved" type="ARRAY" subtype="SHORT" count="12" desc="">
+                <ITEM name="reserved[0]" value="0x0" desc=""/>
+                <ITEM name="reserved[1]" value="0x0" desc=""/>
+                <ITEM name="reserved[2]" value="0x0" desc=""/>
+                <ITEM name="reserved[3]" value="0x0" desc=""/>
+                <ITEM name="reserved[4]" value="0x0" desc=""/>
+                <ITEM name="reserved[5]" value="0x0" desc=""/>
+                <ITEM name="reserved[6]" value="0x0" desc=""/>
+                <ITEM name="reserved[7]" value="0x0" desc=""/>
+                <ITEM name="reserved[8]" value="0x0" desc=""/>
+                <ITEM name="reserved[9]" value="0x0" desc=""/>
+                <ITEM name="reserved[10]" value="0x0" desc=""/>
+                <ITEM name="reserved[11]" value="0x0" desc=""/>
+            </ITEM>
+        </ITEM>
+        <ITEM name="cali_LB" type="STRUCT" desc="">
+            <ITEM name="cali_point_num" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="comp_point" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="max_rx_gain_index" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="rssi_lower_limit" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="rssi_upper_limit" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="cali_point0" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point1" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point2" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point3" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="cali_point4" type="STRUCT" desc="">
+                <ITEM name="cali_gain_index" type="SHORT" value="0x0" desc=""/>
+                <ITEM name="cell_power" type="SHORT" value="0x0" desc=""/>
+            </ITEM>
+            <ITEM name="reserved" type="ARRAY" subtype="SHORT" count="12" desc="">
+                <ITEM name="reserved[0]" value="0x0" desc=""/>
+                <ITEM name="reserved[1]" value="0x0" desc=""/>
+                <ITEM name="reserved[2]" value="0x0" desc=""/>
+                <ITEM name="reserved[3]" value="0x0" desc=""/>
+                <ITEM name="reserved[4]" value="0x0" desc=""/>
+                <ITEM name="reserved[5]" value="0x0" desc=""/>
+                <ITEM name="reserved[6]" value="0x0" desc=""/>
+                <ITEM name="reserved[7]" value="0x0" desc=""/>
+                <ITEM name="reserved[8]" value="0x0" desc=""/>
+                <ITEM name="reserved[9]" value="0x0" desc=""/>
+                <ITEM name="reserved[10]" value="0x0" desc=""/>
+                <ITEM name="reserved[11]" value="0x0" desc=""/>
+            </ITEM>
+        </ITEM>
+    </ITEM>
+    <ITEM name="agc_specified_comp_ch_div" type="STRUCT" desc="">
+        <ITEM name="cal_ch_gsm900" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_gsm900[0]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[1]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[2]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[3]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[4]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[5]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[6]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm900[9]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="cal_ch_dcs" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_dcs[0]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[1]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[2]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[3]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[4]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[5]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[6]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_dcs[9]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="cal_ch_pcs" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_pcs[0]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[1]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[2]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[3]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[4]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[5]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[6]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_pcs[9]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="cal_ch_gsm850" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="cal_ch_gsm850[0]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[1]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[2]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[3]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[4]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[5]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[6]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[7]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[8]" value="0x0" desc=""/>
+            <ITEM name="cal_ch_gsm850[9]" value="0x0" desc=""/>
+        </ITEM>
+    </ITEM>
+</ITEM>

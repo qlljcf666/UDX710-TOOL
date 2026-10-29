@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Spreadtrum Device Manager Configuration List-->
+<DEVMANAGER>
+	<LIBLIST>
+		<Library Name = "DummyRF.dll" KeyWord = "DUMMY"/>
+		<Library Name = "DummyDC.dll" KeyWord = "DUMMY"/>
+		<Library Name = "E363X.dll" KeyWord = "E363"/>
+        <Library Name = "K230X.dll" KeyWord = "230"/>
+        <Library Name = "663XX.dll" KeyWord = "663"/>
+		<Library Name = "HhyXX.dll" KeyWord = "SPD232"/>		
+		<Library Name = "CMW500.dll" KeyWord = "CMW,1201.0002k50$CMW,1201.0002k75$CMW,1201.0002k25$CMW,1201.0002k29"/>
+		<Library Name = "CMW100.dll" KeyWord = "CMW,1201.0002k31$CMW,1201.0002k06$CMW,1201.0002k03"/>
+		<Library Name = "CMU200.dll" KeyWord = "CMU 200"/>
+		<Library Name = "HP8960.dll" KeyWord = "8960"/>
+		<Library Name = "KS6640.dll" KeyWord = "6640"/>
+		<Library Name = "MT8820C.dll" KeyWord = "8820"/>
+		<Library Name = "MT8870.dll" KeyWord = "8870"/>
+		<Library Name = "IQxstream.dll" KeyWord = "IQxstream"/>
+		<Library Name = "CTP3110.dll" KeyWord = "CTP3110"/>
+		<Library Name = "CTP3308C.dll" KeyWord = "CTP3110"/>
+		<Library Name = "CTP3308E.dll" KeyWord = "CTP3308E"/>
+		<Library Name = "SP8011.dll" KeyWord = "SP8011"/>
+		<Library Name = "SP9010.dll" KeyWord = "SP9010"/>
+		<Library Name = "T6290.dll" KeyWord = "T6290"/>
+		<Library Name = "IQXel.dll" KeyWord = "GpibApi"/>
+		<Library Name = "IQXel160.dll" KeyWord = "GpibApi"/>
+		<Library Name = "IQ201X.dll" KeyWord = "GpibApi"/>
+		<Library Name = "Aeroflex3920.dll" KeyWord = "3920"/>
+		<Library Name = "N6705.dll" KeyWord = "N6705"/>
+		<Library Name = "EXTC.dll" KeyWord = "E6607C"/>
+        <Library Name = "WT208.dll" KeyWord = "GpibApi"/>
+		<Library Name = "OPX.dll" KeyWord = "OPX"/>
+        <Library Name = "UXM.dll" KeyWord = "C8700200A"/>
+		<Library Name = "PXI3000.dll" KeyWord = "GpibApi"/>
+	</LIBLIST>
+</DEVMANAGER>

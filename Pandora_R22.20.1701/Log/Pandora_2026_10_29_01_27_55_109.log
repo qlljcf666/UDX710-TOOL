@@ -1,0 +1,9 @@
+[2026-10-29 01:27:55:114][DUT         ][3 - Information] Set Endian = 2
+[2026-10-29 01:27:55:123][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2026-10-29 01:27:55:124][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2026-10-29 01:28:17:035][Pandora     ][3 - Information] [AT]->:
+ AT+SPDSP=1,1,0,0
+[2026-10-29 01:28:17:036][DUT         ][3 - Information] SendATCommand: AT+SPDSP=1,1,0,0
+[2026-10-29 01:28:17:036][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 01:28:17:036][Pandora     ][3 - Information] send at fail!
+[2026-10-29 01:28:24:094][DUT         ][5 - Verbose    ] DiagPhone is cleaned up.

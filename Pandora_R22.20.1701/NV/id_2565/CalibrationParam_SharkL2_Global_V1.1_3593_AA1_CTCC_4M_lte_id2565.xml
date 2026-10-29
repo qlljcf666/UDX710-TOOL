@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ITEM name="LTE_Cali_common" id="2565" type="STRUCT" desc="">
+    <ITEM name="LTE_CaliParam_version" type="SHORT" value="0x5" desc=""/>
+    <ITEM name="LTE_CaliParam_flag" type="SHORT" value="0x0" desc=""/>
+    <ITEM name="LTE_CALI_AFC_CONTROL" type="STRUCT" desc="">
+        <ITEM name="TCXO_CAL" type="STRUCT" desc="">
+            <ITEM name="AFC0" type="SHORT" value="0x29A6" desc=""/>
+            <ITEM name="AFC_K" type="SHORT" value="0x2A" desc=""/>
+            <ITEM name="reserved" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="reserved(1)" type="SHORT" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="DCXO_CAL" type="STRUCT" desc="">
+            <ITEM name="DCXO_CAFC_slope" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="CDAC" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="CAFC" type="SHORT" value="0x0" desc=""/>
+            <ITEM name="reserved" type="SHORT" value="0x0" desc=""/>
+        </ITEM>
+    </ITEM>
+</ITEM>

@@ -1,0 +1,21 @@
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 56 -> Lithuanian
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 57 -> Macedonian
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 58 -> Moldovan
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 59 -> Norwegian
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 60 -> Polish
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 61 -> Serbian
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 62 -> Sesotho
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 63 -> Slovak
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 64 -> Swedish
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 65 -> Ukrainian
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 66 -> Yoruba
+[2026-01-16 19:40:44:446][Config      ][3 - Information] Get String: FactoryDownload.ini -> MES -> Enable -> 0
+[2026-01-16 19:40:44:451][Config      ][3 - Information] Default String: FactoryDownload.ini -> GUI -> Title -> 
+[2026-01-16 19:40:44:451][Config      ][3 - Information] Default String: FactoryDownload.ini -> GUI -> ShowVer -> 1
+[2026-01-16 19:40:52:682][DLFramework ][3 - Information] Packet Path : C:\Users\ZH\下载\SRM810-CN固件\固件\ubipac.pac
+[2026-01-16 19:40:52:682][DLFramework ][3 - Information] Unpack Dir : E:\nv\Download_R27.23.0101\Bin\ImageFiles
+[2026-01-16 19:40:52:682][DLFramework ][3 - Information] Open( C:\Users\ZH\下载\SRM810-CN固件\固件\ubipac.pac )
+[2026-01-16 19:40:52:682][DLFramework ][3 - Information] Unpacket( C:\Users\ZH\下载\SRM810-CN固件\固件\ubipac.pac )
+[2026-01-16 19:40:52:682][DLFramework ][3 - Information] Image Files Dir : 
+[2026-01-16 19:40:52:682][DLFramework ][3 - Information] Pac XML Path : 
+[2026-01-16 19:41:05:383][DLFramework ][1 - Error      ] [PK3035]Bin packet version is not support!  (Error code = 3103)

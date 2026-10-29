@@ -1,0 +1,22 @@
+[2025-06-20 18:47:28:358][DUT         ][3 - Information] Set Endian = 2
+[2025-06-20 18:47:28:368][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2025-06-20 18:47:28:373][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2025-06-20 18:47:46:598][DUT         ][1 - Error      ] Device is not opened.
+[2025-06-20 18:47:46:600][Pandora     ][3 - Information] SP_apLoadPMICAFCData fail, Err Code = 0x30102
+[2025-06-20 18:47:47:172][DUT         ][5 - Verbose    ] CCommCmd::apSavePIMICAFCData:PMIC CDAC = 0, HP_Mode_Amp_26M = 0, LP_Mode_Amp_26M = 0, LP_Mode_Drift_32K = 0
+[2025-06-20 18:47:47:172][DUT         ][1 - Error      ] Device is not opened.
+[2025-06-20 18:47:47:175][Pandora     ][3 - Information] SP_apLoadPMICAFCData fail, Err Code = 0x30102
+[2025-06-20 18:48:03:645][DUT         ][3 - Information] Start to enter mode 0x81 by USB: target port = -1, TimeOut = 0, QuitSignal = 1
+[2025-06-20 18:48:03:646][DUT         ][5 - Verbose    ] CDevMode::run
+[2025-06-20 18:48:03:646][Pandora     ][3 - Information] please power on the dut in 120 seconds!
+[2025-06-20 18:48:04:388][Pandora     ][3 - Information] Entermode fail
+[2025-06-20 18:48:04:460][DUT         ][3 - Information] Load Modem V3 NV: nv = 1
+[2025-06-20 18:48:04:461][DUT         ][1 - Error      ] Device is not opened.
+[2025-06-20 18:48:04:485][DUT         ][5 - Verbose    ] Closing port, type = 3
+[2025-06-20 18:48:04:485][DUT         ][3 - Information] Close: device is not open
+[2025-06-20 18:48:19:846][DUT         ][1 - Error      ] Device is not opened.
+[2025-06-20 18:48:19:849][Pandora     ][3 - Information] SP_apLoadPMICAFCData fail, Err Code = 0x30102
+[2025-06-20 18:48:20:907][DUT         ][5 - Verbose    ] CCommCmd::apSavePIMICAFCData:PMIC CDAC = 0, HP_Mode_Amp_26M = 0, LP_Mode_Amp_26M = 0, LP_Mode_Drift_32K = 0
+[2025-06-20 18:48:20:907][DUT         ][1 - Error      ] Device is not opened.
+[2025-06-20 18:48:20:911][Pandora     ][3 - Information] SP_apLoadPMICAFCData fail, Err Code = 0x30102
+[2025-06-20 18:48:22:430][DUT         ][5 - Verbose    ] DiagPhone is cleaned up.

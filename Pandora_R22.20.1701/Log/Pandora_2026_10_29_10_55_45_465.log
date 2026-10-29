@@ -1,0 +1,46 @@
+[2026-10-29 10:55:45:468][DUT         ][3 - Information] Set Endian = 2
+[2026-10-29 10:55:45:475][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2026-10-29 10:55:45:476][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2026-10-29 10:56:27:034][Pandora     ][3 - Information] 
+[BT]:Classic EUT mode.
+[2026-10-29 10:56:27:034][Pandora     ][3 - Information] AT: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:27:034][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:27:034][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:27:034][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:27:034][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:27:034][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:27:034][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:27:034][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:27:034][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:27:035][Pandora     ][3 - Information] ??????
+[2026-10-29 10:56:32:517][Pandora     ][3 - Information] 
+[BT]:Classic Signal mode.
+[2026-10-29 10:56:32:517][Pandora     ][3 - Information] AT: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:32:517][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:32:517][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:32:517][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:32:517][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:32:517][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:32:517][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:32:517][DUT         ][3 - Information] SendATCommand: AT+SPBTTEST=TESTMODE?
+[2026-10-29 10:56:32:518][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:32:518][Pandora     ][3 - Information] ??????
+[2026-10-29 10:56:46:976][Pandora     ][3 - Information] 
+[Wlan]:Enter EUT mode!
+[2026-10-29 10:56:46:977][Pandora     ][3 - Information] AT: AT+SPWIFITEST=EUT?
+[2026-10-29 10:56:46:977][DUT         ][3 - Information] SendATCommand: AT+SPWIFITEST=EUT?
+[2026-10-29 10:56:46:977][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:46:977][DUT         ][3 - Information] SendATCommand: AT+SPWIFITEST=EUT?
+[2026-10-29 10:56:46:977][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:46:977][DUT         ][3 - Information] SendATCommand: AT+SPWIFITEST=EUT?
+[2026-10-29 10:56:46:977][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:46:977][DUT         ][3 - Information] SendATCommand: AT+SPWIFITEST=EUT?
+[2026-10-29 10:56:46:977][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:56:46:977][Pandora     ][3 - Information] [WIFI]: AT+SPWIFITEST=EUT? failed!
+[2026-10-29 10:56:46:977][Pandora     ][3 - Information] Enter wlan EUT mode 1 failed!
+[2026-10-29 10:57:19:467][Pandora     ][3 - Information] [AT]->:
+ ATD<0123456789*#+abc>
+[2026-10-29 10:57:19:467][DUT         ][3 - Information] SendATCommand: ATD<0123456789*#+abc>
+[2026-10-29 10:57:19:467][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:57:19:467][Pandora     ][3 - Information] ?AT??
+[2026-10-29 10:57:35:872][DUT         ][5 - Verbose    ] DiagPhone is cleaned up.

@@ -1,0 +1,11 @@
+[2026-10-29 10:24:06:748][DUT         ][3 - Information] Set Endian = 2
+[2026-10-29 10:24:06:757][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2026-10-29 10:24:06:757][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2026-10-29 10:24:17:609][DUT         ][5 - Verbose    ] Closing port, type = 0
+[2026-10-29 10:24:17:609][DUT         ][3 - Information] Close: device is not open
+[2026-10-29 10:24:29:129][DUT         ][3 - Information] CCaliCmd::tdLoadNV: nv = 3, size = 2500
+[2026-10-29 10:24:29:129][DUT         ][1 - Error      ] Device is not opened.
+[2026-10-29 10:24:29:129][Pandora     ][3 - Information] SP_tdLoadNV(TD_NV_CAL_APC_CONTROL_WORD_INDEX) fail,Err Code=0x30102
+[2026-10-29 10:25:52:075][DUT         ][5 - Verbose    ] Closing port, type = 0
+[2026-10-29 10:25:52:075][DUT         ][3 - Information] Close: device is not open
+[2026-10-29 10:27:14:637][DUT         ][5 - Verbose    ] DiagPhone is cleaned up.

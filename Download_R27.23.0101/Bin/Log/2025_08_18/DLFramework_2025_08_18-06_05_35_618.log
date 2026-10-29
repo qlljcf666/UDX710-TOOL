@@ -1,0 +1,21 @@
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 56 -> Lithuanian
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 57 -> Macedonian
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 58 -> Moldovan
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 59 -> Norwegian
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 60 -> Polish
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 61 -> Serbian
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 62 -> Sesotho
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 63 -> Slovak
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 64 -> Swedish
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 65 -> Ukrainian
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get Section: BMFileType.ini -> MultiLangs -> 66 -> Yoruba
+[2025-08-18 06:05:35:649][Config      ][3 - Information] Get String: ResearchDownload.ini -> MES -> Enable -> 0
+[2025-08-18 06:05:35:665][Config      ][3 - Information] Default String: ResearchDownload.ini -> GUI -> Title -> 
+[2025-08-18 06:05:35:665][Config      ][3 - Information] Default String: ResearchDownload.ini -> GUI -> ShowVer -> 1
+[2025-08-18 06:05:44:744][DLFramework ][3 - Information] Packet Path : C:\Users\ZH\下载\RG500U\rg500u-op固件\C2000-518_1.9.5.n0.c8.pac
+[2025-08-18 06:05:44:744][DLFramework ][3 - Information] Unpack Dir : E:\nv\Download_R27.23.0101\Bin\ImageFiles
+[2025-08-18 06:05:44:744][DLFramework ][3 - Information] Open( C:\Users\ZH\下载\RG500U\rg500u-op固件\C2000-518_1.9.5.n0.c8.pac )
+[2025-08-18 06:05:44:744][DLFramework ][3 - Information] Unpacket( C:\Users\ZH\下载\RG500U\rg500u-op固件\C2000-518_1.9.5.n0.c8.pac )
+[2025-08-18 06:05:44:744][DLFramework ][3 - Information] Image Files Dir : 
+[2025-08-18 06:05:44:744][DLFramework ][3 - Information] Pac XML Path : 
+[2025-08-18 06:05:46:118][DLFramework ][1 - Error      ] [PK3035]Bin packet version is not support!  (Error code = 3103)

@@ -1,0 +1,21 @@
+[2026-09-15 04:02:26:033][DLFramework ][3 - Information] Modem_NR_PMSYS            ; CheckFlag : 1 ; Size : 0.03160        MB;
+[2026-09-15 04:02:26:033][DLFramework ][3 - Information] Modem_NR_AGDSP            ; CheckFlag : 1 ; Size : 5.00112        MB;
+[2026-09-15 04:02:26:033][DLFramework ][3 - Information] FLASH_NR                  ; CheckFlag : 1 ; Size : 0.00000        MB;
+[2026-09-15 04:02:26:033][DLFramework ][3 - Information] Modem_NR                  ; CheckFlag : 1 ; Size : 23.11768       MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] Modem_NR_V3PHY            ; CheckFlag : 1 ; Size : 3.98726        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] Modem_NR_PHY              ; CheckFlag : 1 ; Size : 1.33731        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] Modem_NR_DSP1             ; CheckFlag : 1 ; Size : 0.49819        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] Modem_NR_DSP2             ; CheckFlag : 1 ; Size : 0.68862        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] Modem_NR_DELTANV          ; CheckFlag : 1 ; Size : 0.03857        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] Recovery                  ; CheckFlag : 1 ; Size : 16.99721       MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] m_data                    ; CheckFlag : 0 ; Size : 0.00000        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] EraseUserdata             ; CheckFlag : 0 ; Size : 0.00000        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] System                    ; CheckFlag : 1 ; Size : 27.97266       MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] UserData                  ; CheckFlag : 1 ; Size : 1.93750        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] EraseMisc                 ; CheckFlag : 1 ; Size : 0.00000        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] Misc                      ; CheckFlag : 1 ; Size : 1.08984        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] SPLLoader                 ; CheckFlag : 1 ; Size : 0.05068        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] NV_NR                     ; CheckFlag : 1 ; Size : 5.29786        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] ProdNV                    ; CheckFlag : 1 ; Size : 1.57422        MB;
+[2026-09-15 04:02:26:034][DLFramework ][3 - Information] PhaseCheck                ; CheckFlag : 1 ; Size : 0.00000        MB;
+[2026-09-15 04:02:46:256][DLFramework ][1 - Error      ] [DL3020][A]Configure dangerouse: have selected repartition, but not selected all files to download [M_DATA,ERASEUSERDATA]. Please select right packet!

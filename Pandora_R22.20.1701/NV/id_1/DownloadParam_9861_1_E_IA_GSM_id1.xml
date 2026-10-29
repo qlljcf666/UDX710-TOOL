@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ITEM name="system_param_dsp_use_T" id="1" type="STRUCT" desc="">
+    <ITEM name="system_param_version" type="SHORT" value="0xFF04" desc=""/>
+    <ITEM name="fcch_det_struct" type="STRUCT" desc="">
+        <ITEM name="acor_delay" type="SHORT" value="0x4" desc=""/>
+        <ITEM name="alpha" type="SHORT" value="0x6FFF" desc=""/>
+        <ITEM name="beta" type="SHORT" value="0x77FF" desc=""/>
+        <ITEM name="thresh" type="SHORT" value="0x5332" desc=""/>
+        <ITEM name="nameda" type="SHORT" value="0x6FFF" desc=""/>
+        <ITEM name="hp" type="SHORT" value="0x23" desc=""/>
+        <ITEM name="lp" type="SHORT" value="0x23" desc=""/>
+        <ITEM name="t1" type="SHORT" value="0x7D" desc=""/>
+        <ITEM name="t2" type="SHORT" value="0xC8" desc=""/>
+        <ITEM name="power_shift1" type="SHORT" value="0x4" desc=""/>
+        <ITEM name="power_shift2" type="SHORT" value="0x1" desc=""/>
+        <ITEM name="extra_gain_for_fcch" type="SHORT" value="0x1" desc=""/>
+    </ITEM>
+    <ITEM name="freq_est_struct" type="STRUCT" desc="">
+        <ITEM name="iteration_num" type="SHORT" value="0x4" desc=""/>
+        <ITEM name="freq_est_beta" type="SHORT" value="0x5999" desc=""/>
+        <ITEM name="N_length" type="SHORT" value="0x6C" desc=""/>
+        <ITEM name="N_lag" type="SHORT" value="0x8" desc=""/>
+        <ITEM name="N_shift1" type="SHORT" value="0x7" desc=""/>
+        <ITEM name="N_shift2" type="SHORT" value="0x2" desc=""/>
+    </ITEM>
+    <ITEM name="freq_track_algo_struct" type="STRUCT" desc="">
+        <ITEM name="monitor_win_size" type="SHORT" value="0x32" desc=""/>
+        <ITEM name="decision_thresh" type="SHORT" value="0x23" desc=""/>
+        <ITEM name="idle_AFC_thresh" type="SHORT" value="0x2004" desc="used for idle frequency track"/>
+        <ITEM name="freq_track_by_fcch" type="SHORT" value="0x0" desc=""/>
+    </ITEM>
+    <ITEM name="AGC_algo_cal_struct" type="STRUCT" desc="">
+        <ITEM name="beta_gsm" type="SHORT" value="0xE6" desc=""/>
+        <ITEM name="beta_gprs" type="SHORT" value="0x80" desc=""/>
+        <ITEM name="threshold1" type="SHORT" value="0x3" desc="RF new 3dB-gain step mode"/>
+        <ITEM name="threshold2" type="SHORT" value="0x6" desc="RF new 3dB-gain step mode"/>
+        <ITEM name="tch_target_BB_RSSI" type="SHORT" value="0xFFE4" desc=""/>
+        <ITEM name="idle_target_BB_RSSI" type="SHORT" value="0xFFE4" desc=""/>
+        <ITEM name="target_BB_RSSI_idle_reduce" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="BEC_thresh" type="SHORT" value="0x3C2D" desc=""/>
+        <ITEM name="agc_idle_saturate_threshold_reduce" type="SHORT" value="0x4" desc=""/>
+        <ITEM name="agc_idle_saturate_gain_cut_down" type="SHORT" value="0xA" desc=""/>
+        <ITEM name="voice_BEC_thresh" type="SHORT" value="0x2E" desc=""/>
+        <ITEM name="RSSI_cal_cons" type="SHORT" value="0x55" desc="RF new 3dB-gain step mode"/>
+    </ITEM>
+    <ITEM name="time_track_algo_struct" type="STRUCT" desc="">
+        <ITEM name="win_size" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="tracking_decision_thresh" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="TAV_control" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="TAV_step" type="SHORT" value="0x0" desc=""/>
+    </ITEM>
+    <ITEM name="rx_equalizer_struct" type="STRUCT" desc="">
+        <ITEM name="soft_bit_N_OPT" type="SHORT" value="0x4" desc=""/>
+        <ITEM name="RF_ref_RX_lev" type="SHORT" value="0x1" desc=""/>
+        <ITEM name="chan_est_thresh" type="SHORT" value="0x2000" desc=""/>
+    </ITEM>
+    <ITEM name="rx_deinterlever_struct" type="STRUCT" desc="">
+        <ITEM name="FACCH_thresh" type="SHORT" value="0x0" desc=""/>
+    </ITEM>
+    <ITEM name="power_scan_struct" type="STRUCT" desc="">
+        <ITEM name="power_scan_saturation_thresh" type="SHORT" value="0xFFF3" desc=""/>
+        <ITEM name="power_exp_lev" type="ARRAY" subtype="SHORT" count="3" desc="">
+            <ITEM name="[0x0]" value="0x6" desc=""/>
+            <ITEM name="[0x1]" value="0x10" desc=""/>
+            <ITEM name="[0x2]" value="0x1A" desc=""/>
+        </ITEM>
+        <ITEM name="power_underflow_thresh" type="ARRAY" subtype="SHORT" count="3" desc="">
+            <ITEM name="[0x0]" value="0xFFC0" desc=""/>
+            <ITEM name="[0x1]" value="0xFFD0" desc=""/>
+            <ITEM name="[0x2]" value="0xFFD0" desc=""/>
+        </ITEM>
+    </ITEM>
+    <ITEM name="tone_para_struct" type="STRUCT" desc="">
+        <ITEM name="tone_volume" type="SHORT" value="0x3FFF" desc=""/>
+    </ITEM>
+    <ITEM name="action_tables_struct" type="STRUCT" desc="">
+        <ITEM name="saved_action_table" type="ARRAY" subtype="SHORT" count="288" desc="">
+            <ITEM name="[0x0]" value="0xA003" desc="RACH TX_ACTION_TABLE"/>
+            <ITEM name="[0x1]" value="0xD003" desc=""/>
+            <ITEM name="[0x2]" value="0x4804" desc=""/>
+            <ITEM name="[0x3]" value="0x1003" desc=""/>
+            <ITEM name="[0x4]" value="0x1803" desc=""/>
+            <ITEM name="[0x5]" value="0x1803" desc=""/>
+            <ITEM name="[0x6]" value="0x1803" desc=""/>
+            <ITEM name="[0x7]" value="0x1003" desc=""/>
+            <ITEM name="[0x8]" value="0x1003" desc=""/>
+            <ITEM name="[0x9]" value="0x1003" desc=""/>
+            <ITEM name="[0xA]" value="0x1003" desc=""/>
+            <ITEM name="[0xB]" value="0x1003" desc=""/>
+            <ITEM name="[0xC]" value="0x1003" desc=""/>
+            <ITEM name="[0xD]" value="0x1003" desc=""/>
+            <ITEM name="[0xE]" value="0x1003" desc=""/>
+            <ITEM name="[0xF]" value="0x1003" desc=""/>
+            <ITEM name="[0x10]" value="0x1003" desc=""/>
+            <ITEM name="[0x11]" value="0x1003" desc=""/>
+            <ITEM name="[0x12]" value="0x1003" desc=""/>
+            <ITEM name="[0x13]" value="0x1003" desc=""/>
+            <ITEM name="[0x14]" value="0x88A7" desc="MIPI PA on"/>
+            <ITEM name="[0x15]" value="0x3811" desc="MIPI PA off"/>
+            <ITEM name="[0x16]" value="0x9003" desc=""/>
+            <ITEM name="[0x17]" value="0xD80D" desc=""/>
+            <ITEM name="[0x18]" value="0xD80E" desc=""/>
+            <ITEM name="[0x19]" value="0xDA70" desc=""/>
+            <ITEM name="[0x1A]" value="0x8003" desc=""/>
+            <ITEM name="[0x1B]" value="0x1003" desc=""/>
+            <ITEM name="[0x1C]" value="0x1003" desc=""/>
+            <ITEM name="[0x1D]" value="0x1003" desc=""/>
+            <ITEM name="[0x1E]" value="0x1003" desc=""/>
+            <ITEM name="[0x1F]" value="0x1003" desc=""/>
+            <ITEM name="[0x20]" value="0x1003" desc=""/>
+            <ITEM name="[0x21]" value="0x1003" desc=""/>
+            <ITEM name="[0x22]" value="0x1003" desc=""/>
+            <ITEM name="[0x23]" value="0x3003" desc=""/>
+            <ITEM name="[0x24]" value="0x4005" desc=""/>
+            <ITEM name="[0x25]" value="0xD003" desc=""/>
+            <ITEM name="[0x26]" value="0x0" desc=""/>
+            <ITEM name="[0x27]" value="0x7" desc=""/>
+            <ITEM name="[0x28]" value="0x0" desc=""/>
+            <ITEM name="[0x29]" value="0x0" desc=""/>
+            <ITEM name="[0x2A]" value="0x0" desc=""/>
+            <ITEM name="[0x2B]" value="0x0" desc=""/>
+            <ITEM name="[0x2C]" value="0x0" desc=""/>
+            <ITEM name="[0x2D]" value="0x0" desc=""/>
+            <ITEM name="[0x2E]" value="0x0" desc=""/>
+            <ITEM name="[0x2F]" value="0xFFFF" desc="#####  end of actions above  #####"/>
+            <ITEM name="[0x30]" value="0x25E" desc="gap1,g+8"/>
+            <ITEM name="[0x31]" value="0x25B" desc="gap1,8+g"/>
+            <ITEM name="[0x32]" value="0x261" desc="gap1,8+8"/>
+            <ITEM name="[0x33]" value="0x270" desc="gap2,g+8"/>
+            <ITEM name="[0x34]" value="0x272" desc="gap2,8+g"/>
+            <ITEM name="[0x35]" value="0x270" desc="gap2,8+8"/>
+            <ITEM name="[0x36]" value="0x270" desc="gap3,g+8"/>
+            <ITEM name="[0x37]" value="0x270" desc="gap3,8+g"/>
+            <ITEM name="[0x38]" value="0x270" desc="gap3,8+8"/>
+            <ITEM name="[0x39]" value="0x0" desc=""/>
+            <ITEM name="[0x3A]" value="0xFFFF" desc="1-end of stage-1"/>
+            <ITEM name="[0x3B]" value="0xA003" desc="2-start of common tx actions"/>
+            <ITEM name="[0x3C]" value="0xD003" desc=""/>
+            <ITEM name="[0x3D]" value="0x4804" desc=""/>
+            <ITEM name="[0x3E]" value="0x1003" desc=""/>
+            <ITEM name="[0x3F]" value="0x1803" desc=""/>
+            <ITEM name="[0x40]" value="0x1803" desc=""/>
+            <ITEM name="[0x41]" value="0x1803" desc=""/>
+            <ITEM name="[0x42]" value="0x1003" desc=""/>
+            <ITEM name="[0x43]" value="0x1003" desc=""/>
+            <ITEM name="[0x44]" value="0x1003" desc=""/>
+            <ITEM name="[0x45]" value="0x1003" desc=""/>
+            <ITEM name="[0x46]" value="0x1003" desc=""/>
+            <ITEM name="[0x47]" value="0x1003" desc=""/>
+            <ITEM name="[0x48]" value="0x1003" desc=""/>
+            <ITEM name="[0x49]" value="0x0" desc=""/>
+            <ITEM name="[0x4A]" value="0x0" desc=""/>
+            <ITEM name="[0x4B]" value="0xFFFF" desc="2-end of stage-2"/>
+            <ITEM name="[0x4C]" value="0x1003" desc="3-start of gmsk tx part"/>
+            <ITEM name="[0x4D]" value="0x1003" desc=""/>
+            <ITEM name="[0x4E]" value="0x1003" desc=""/>
+            <ITEM name="[0x4F]" value="0x1003" desc=""/>
+            <ITEM name="[0x50]" value="0x1003" desc=""/>
+            <ITEM name="[0x51]" value="0x1003" desc=""/>
+            <ITEM name="[0x52]" value="0x88A7" desc=""/>
+            <ITEM name="[0x53]" value="0x3811" desc=""/>
+            <ITEM name="[0x54]" value="0x9003" desc=""/>
+            <ITEM name="[0x55]" value="0xD80D" desc=""/>
+            <ITEM name="[0x56]" value="0xD80E" desc=""/>
+            <ITEM name="[0x57]" value="0x0" desc=""/>
+            <ITEM name="[0x58]" value="0x0" desc=""/>
+            <ITEM name="[0x59]" value="0x0" desc=""/>
+            <ITEM name="[0x5A]" value="0x0" desc=""/>
+            <ITEM name="[0x5B]" value="0x0" desc=""/>
+            <ITEM name="[0x5C]" value="0x0" desc=""/>
+            <ITEM name="[0x5D]" value="0x0" desc=""/>
+            <ITEM name="[0x5E]" value="0x0" desc=""/>
+            <ITEM name="[0x5F]" value="0x0" desc=""/>
+            <ITEM name="[0x60]" value="0xFFFF" desc="3-end of stage-3"/>
+            <ITEM name="[0x61]" value="0x1003" desc="4-start of 8psk tx part"/>
+            <ITEM name="[0x62]" value="0x1003" desc=""/>
+            <ITEM name="[0x63]" value="0x1003" desc=""/>
+            <ITEM name="[0x64]" value="0x1003" desc=""/>
+            <ITEM name="[0x65]" value="0x1003" desc=""/>
+            <ITEM name="[0x66]" value="0x1003" desc=""/>
+            <ITEM name="[0x67]" value="0x38B6" desc=""/>
+            <ITEM name="[0x68]" value="0x2809" desc=""/>
+            <ITEM name="[0x69]" value="0xD809" desc=""/>
+            <ITEM name="[0x6A]" value="0xD80D" desc=""/>
+            <ITEM name="[0x6B]" value="0x0" desc=""/>
+            <ITEM name="[0x6C]" value="0x0" desc=""/>
+            <ITEM name="[0x6D]" value="0x0" desc=""/>
+            <ITEM name="[0x6E]" value="0x0" desc=""/>
+            <ITEM name="[0x6F]" value="0x0" desc=""/>
+            <ITEM name="[0x70]" value="0x0" desc=""/>
+            <ITEM name="[0x71]" value="0x0" desc=""/>
+            <ITEM name="[0x72]" value="0x0" desc=""/>
+            <ITEM name="[0x73]" value="0x0" desc=""/>
+            <ITEM name="[0x74]" value="0x0" desc=""/>
+            <ITEM name="[0x75]" value="0xFFFF" desc="4-end of stage-4"/>
+            <ITEM name="[0x76]" value="0xDA70" desc="5-start of gmsk tx off"/>
+            <ITEM name="[0x77]" value="0x8003" desc=""/>
+            <ITEM name="[0x78]" value="0x0" desc=""/>
+            <ITEM name="[0x79]" value="0x0" desc=""/>
+            <ITEM name="[0x7A]" value="0x0" desc=""/>
+            <ITEM name="[0x7B]" value="0xFFFF" desc="5-end of stage-5"/>
+            <ITEM name="[0x7C]" value="0xDA70" desc="6-start of 8psk tx off"/>
+            <ITEM name="[0x7D]" value="0x2005" desc=""/>
+            <ITEM name="[0x7E]" value="0x0" desc=""/>
+            <ITEM name="[0x7F]" value="0x0" desc=""/>
+            <ITEM name="[0x80]" value="0x0" desc=""/>
+            <ITEM name="[0x81]" value="0xFFFF" desc="6-end of stage-g6"/>
+            <ITEM name="[0x82]" value="0xFFFF" desc="7-stage-7, GG1 actions in gmsk-gmsk"/>
+            <ITEM name="[0x83]" value="0xFFFF" desc="8-stage-8, GG2 actions in gmsk-gmsk"/>
+            <ITEM name="[0x84]" value="0xFFFF" desc="9-stage-9, GG3 actions in gmsk-gmsk"/>
+            <ITEM name="[0x85]" value="0x9003" desc="10-start of PP1 actions in 8psk-8psk"/>
+            <ITEM name="[0x86]" value="0x1003" desc=""/>
+            <ITEM name="[0x87]" value="0x1003" desc=""/>
+            <ITEM name="[0x88]" value="0x1005" desc=""/>
+            <ITEM name="[0x89]" value="0x100B" desc=""/>
+            <ITEM name="[0x8A]" value="0x0" desc=""/>
+            <ITEM name="[0x8B]" value="0xFFFF" desc="10-end of stage-10 PP1"/>
+            <ITEM name="[0x8C]" value="0x9003" desc="11-start of PP2 actions in 8psk-8psk"/>
+            <ITEM name="[0x8D]" value="0x1003" desc=""/>
+            <ITEM name="[0x8E]" value="0x1003" desc=""/>
+            <ITEM name="[0x8F]" value="0x1005" desc=""/>
+            <ITEM name="[0x90]" value="0x100B" desc=""/>
+            <ITEM name="[0x91]" value="0x0" desc=""/>
+            <ITEM name="[0x92]" value="0xFFFF" desc="11-end of stage-11 PP2"/>
+            <ITEM name="[0x93]" value="0x9003" desc="12-start of PP3 actions in 8psk-8psk"/>
+            <ITEM name="[0x94]" value="0x1003" desc=""/>
+            <ITEM name="[0x95]" value="0x1003" desc=""/>
+            <ITEM name="[0x96]" value="0x1005" desc=""/>
+            <ITEM name="[0x97]" value="0x100B" desc=""/>
+            <ITEM name="[0x98]" value="0x0" desc=""/>
+            <ITEM name="[0x99]" value="0xFFFF" desc="12-end of stage-12 PP2"/>
+            <ITEM name="[0x9A]" value="0x8A60" desc="13-start of PG1 actions in 8psk-gmsk"/>
+            <ITEM name="[0x9B]" value="0xD80A" desc=""/>
+            <ITEM name="[0x9C]" value="0x1003" desc=""/>
+            <ITEM name="[0x9D]" value="0x1003" desc=""/>
+            <ITEM name="[0x9E]" value="0x1003" desc=""/>
+            <ITEM name="[0x9F]" value="0x1003" desc=""/>
+            <ITEM name="[0xA0]" value="0xD805" desc=""/>
+            <ITEM name="[0xA1]" value="0xD805" desc=""/>
+            <ITEM name="[0xA2]" value="0xD805" desc=""/>
+            <ITEM name="[0xA3]" value="0x2005" desc=""/>
+            <ITEM name="[0xA4]" value="0x0" desc=""/>
+            <ITEM name="[0xA5]" value="0x0" desc=""/>
+            <ITEM name="[0xA6]" value="0x0" desc=""/>
+            <ITEM name="[0xA7]" value="0x0" desc=""/>
+            <ITEM name="[0xA8]" value="0xFFFF" desc="13-end of stage-13 PG1"/>
+            <ITEM name="[0xA9]" value="0x2A60" desc="14-start of GP1 actions in gmsk-8psk"/>
+            <ITEM name="[0xAA]" value="0xD80A" desc="GMSK off MIPI"/>
+            <ITEM name="[0xAB]" value="0x1003" desc=""/>
+            <ITEM name="[0xAC]" value="0x1003" desc=""/>
+            <ITEM name="[0xAD]" value="0x1003" desc="PSK on MIPI 1"/>
+            <ITEM name="[0xAE]" value="0x1003" desc="PSK on MIPI 2"/>
+            <ITEM name="[0xAF]" value="0xD803" desc=""/>
+            <ITEM name="[0xB0]" value="0xD804" desc=""/>
+            <ITEM name="[0xB1]" value="0xD804" desc=""/>
+            <ITEM name="[0xB2]" value="0x8003" desc=""/>
+            <ITEM name="[0xB3]" value="0x0" desc=""/>
+            <ITEM name="[0xB4]" value="0x0" desc=""/>
+            <ITEM name="[0xB5]" value="0x0" desc=""/>
+            <ITEM name="[0xB6]" value="0x0" desc=""/>
+            <ITEM name="[0xB7]" value="0xFFFF" desc="14-end of stage-14 GP1"/>
+            <ITEM name="[0xB8]" value="0x1003" desc="15-start of common tx off actions"/>
+            <ITEM name="[0xB9]" value="0x1003" desc=""/>
+            <ITEM name="[0xBA]" value="0x1003" desc=""/>
+            <ITEM name="[0xBB]" value="0x1003" desc=""/>
+            <ITEM name="[0xBC]" value="0x1003" desc=""/>
+            <ITEM name="[0xBD]" value="0x1003" desc=""/>
+            <ITEM name="[0xBE]" value="0x1003" desc=""/>
+            <ITEM name="[0xBF]" value="0x1003" desc=""/>
+            <ITEM name="[0xC0]" value="0x3003" desc=""/>
+            <ITEM name="[0xC1]" value="0x4005" desc=""/>
+            <ITEM name="[0xC2]" value="0xD003" desc=""/>
+            <ITEM name="[0xC3]" value="0x7" desc=""/>
+            <ITEM name="[0xC4]" value="0x0" desc=""/>
+            <ITEM name="[0xC5]" value="0x0" desc=""/>
+            <ITEM name="[0xC6]" value="0x0" desc=""/>
+            <ITEM name="[0xC7]" value="0x0" desc=""/>
+            <ITEM name="[0xC8]" value="0x0" desc=""/>
+            <ITEM name="[0xC9]" value="0x0" desc=""/>
+            <ITEM name="[0xCA]" value="0xFFFF" desc="15-end of stage-15 tx all off"/>
+            <ITEM name="[0xCB]" value="0xD803" desc="16-start of PA ON for 4TX"/>
+            <ITEM name="[0xCC]" value="0x0" desc=""/>
+            <ITEM name="[0xCD]" value="0x0" desc=""/>
+            <ITEM name="[0xCE]" value="0x0" desc=""/>
+            <ITEM name="[0xCF]" value="0xFFFF" desc="16-end of stage-16 for 4tx"/>
+            <ITEM name="[0xD0]" value="0x0" desc="****END OF TX action table,total length 160 word*********"/>
+            <ITEM name="[0xD1]" value="0x0" desc=""/>
+            <ITEM name="[0xD2]" value="0x0" desc=""/>
+            <ITEM name="[0xD3]" value="0x0" desc=""/>
+            <ITEM name="[0xD4]" value="0x0" desc=""/>
+            <ITEM name="[0xD5]" value="0x0" desc=""/>
+            <ITEM name="[0xD6]" value="0x0" desc=""/>
+            <ITEM name="[0xD7]" value="0x0" desc=""/>
+            <ITEM name="[0xD8]" value="0x0" desc=""/>
+            <ITEM name="[0xD9]" value="0x0" desc=""/>
+            <ITEM name="[0xDA]" value="0x0" desc=""/>
+            <ITEM name="[0xDB]" value="0x0" desc=""/>
+            <ITEM name="[0xDC]" value="0x0" desc=""/>
+            <ITEM name="[0xDD]" value="0x0" desc=""/>
+            <ITEM name="[0xDE]" value="0x0" desc=""/>
+            <ITEM name="[0xDF]" value="0x0" desc=""/>
+            <ITEM name="[0xE0]" value="0x0" desc=""/>
+            <ITEM name="[0xE1]" value="0x0" desc=""/>
+            <ITEM name="[0xE2]" value="0x0" desc=""/>
+            <ITEM name="[0xE3]" value="0x0" desc=""/>
+            <ITEM name="[0xE4]" value="0x0" desc=""/>
+            <ITEM name="[0xE5]" value="0x0" desc=""/>
+            <ITEM name="[0xE6]" value="0x0" desc=""/>
+            <ITEM name="[0xE7]" value="0x0" desc=""/>
+            <ITEM name="[0xE8]" value="0x0" desc=""/>
+            <ITEM name="[0xE9]" value="0x0" desc=""/>
+            <ITEM name="[0xEA]" value="0x0" desc=""/>
+            <ITEM name="[0xEB]" value="0x0" desc=""/>
+            <ITEM name="[0xEC]" value="0x0" desc=""/>
+            <ITEM name="[0xED]" value="0x0" desc=""/>
+            <ITEM name="[0xEE]" value="0x0" desc=""/>
+            <ITEM name="[0xEF]" value="0x0" desc=""/>
+            <ITEM name="[0xF0]" value="0x0" desc=""/>
+            <ITEM name="[0xF1]" value="0x0" desc=""/>
+            <ITEM name="[0xF2]" value="0x0" desc=""/>
+            <ITEM name="[0xF3]" value="0x0" desc=""/>
+            <ITEM name="[0xF4]" value="0x0" desc=""/>
+            <ITEM name="[0xF5]" value="0x0" desc=""/>
+            <ITEM name="[0xF6]" value="0x0" desc=""/>
+            <ITEM name="[0xF7]" value="0x0" desc=""/>
+            <ITEM name="[0xF8]" value="0x0" desc=""/>
+            <ITEM name="[0xF9]" value="0x0" desc=""/>
+            <ITEM name="[0xFA]" value="0x0" desc=""/>
+            <ITEM name="[0xFB]" value="0x0" desc=""/>
+            <ITEM name="[0xFC]" value="0x0" desc=""/>
+            <ITEM name="[0xFD]" value="0x0" desc=""/>
+            <ITEM name="[0xFE]" value="0x0" desc=""/>
+            <ITEM name="[0xFF]" value="0x0" desc=""/>
+            <ITEM name="[0x100]" value="0x0" desc=""/>
+            <ITEM name="[0x101]" value="0x0" desc=""/>
+            <ITEM name="[0x102]" value="0x0" desc=""/>
+            <ITEM name="[0x103]" value="0x0" desc=""/>
+            <ITEM name="[0x104]" value="0x0" desc=""/>
+            <ITEM name="[0x105]" value="0x0" desc=""/>
+            <ITEM name="[0x106]" value="0x0" desc=""/>
+            <ITEM name="[0x107]" value="0x0" desc=""/>
+            <ITEM name="[0x108]" value="0x0" desc=""/>
+            <ITEM name="[0x109]" value="0x0" desc=""/>
+            <ITEM name="[0x10A]" value="0x0" desc=""/>
+            <ITEM name="[0x10B]" value="0x1" desc="band-band timing compensate enable"/>
+            <ITEM name="[0x10C]" value="0x0" desc="gmsk gsm900 timing compensate"/>
+            <ITEM name="[0x10D]" value="0x1" desc="gmsk dcs timing compensate"/>
+            <ITEM name="[0x10E]" value="0x1" desc="gmsk pcs timing compensate"/>
+            <ITEM name="[0x10F]" value="0x0" desc="gmsk gsm850 timing compensate"/>
+            <ITEM name="[0x110]" value="0x0" desc="8psk gsm900 timing compensate"/>
+            <ITEM name="[0x111]" value="0x4" desc="8psk dcs timing compensate"/>
+            <ITEM name="[0x112]" value="0x4" desc="8psk pcs timing compensate"/>
+            <ITEM name="[0x113]" value="0x1" desc="8psk gsm850 timing compensate"/>
+            <ITEM name="[0x114]" value="0x0" desc="g_nv_gmsk_freq_bias_compensate"/>
+            <ITEM name="[0x115]" value="0x0" desc=""/>
+            <ITEM name="[0x116]" value="0x0" desc="edge multislot parameter"/>
+            <ITEM name="[0x117]" value="0x6" desc=""/>
+            <ITEM name="[0x118]" value="0xDF3F" desc=""/>
+            <ITEM name="[0x119]" value="0x1133" desc="bit[12~15]enable 8psk channel mask;bit[8~11]enable mean notch;bit[4~7]ai filter mode;bit[0~3]3:enable ChT;4:disable ChT"/>
+            <ITEM name="[0x11A]" value="0x0" desc=""/>
+            <ITEM name="[0x11B]" value="0x0" desc=""/>
+            <ITEM name="[0x11C]" value="0x2331" desc=""/>
+            <ITEM name="[0x11D]" value="0x20" desc="register val:lpfd stable parameter ffff"/>
+            <ITEM name="[0x11E]" value="0x0" desc="register val:lpfb stable parameter ffeb"/>
+            <ITEM name="[0x11F]" value="0x7E" desc="rx,tx delay adjust 1   0x64"/>
+        </ITEM>
+    </ITEM>
+    <ITEM name="audio_filter_coef" type="STRUCT" desc="">
+        <ITEM name="HPF_coef" type="ARRAY" subtype="SHORT" count="36" desc="">
+            <ITEM name="HPF_coef[0]" value="0xA" desc=""/>
+            <ITEM name="HPF_coef[1]" value="0x4" desc=""/>
+            <ITEM name="HPF_coef[2]" value="0x6" desc=""/>
+            <ITEM name="HPF_coef[3]" value="0x45" desc=""/>
+            <ITEM name="HPF_coef[4]" value="0x47" desc=""/>
+            <ITEM name="HPF_coef[5]" value="0x1249" desc=""/>
+            <ITEM name="HPF_coef[6]" value="0x124B" desc=""/>
+            <ITEM name="HPF_coef[7]" value="0x12CB" desc=""/>
+            <ITEM name="HPF_coef[8]" value="0x12CD" desc=""/>
+            <ITEM name="HPF_coef[9]" value="0x134D" desc=""/>
+            <ITEM name="HPF_coef[10]" value="0x134F" desc=""/>
+            <ITEM name="HPF_coef[11]" value="0x2262" desc=""/>
+            <ITEM name="HPF_coef[12]" value="0x2264" desc=""/>
+            <ITEM name="HPF_coef[13]" value="0x22E4" desc=""/>
+            <ITEM name="HPF_coef[14]" value="0x22E6" desc=""/>
+            <ITEM name="HPF_coef[15]" value="0x2325" desc=""/>
+            <ITEM name="HPF_coef[16]" value="0x2327" desc=""/>
+            <ITEM name="HPF_coef[17]" value="0x3088" desc=""/>
+            <ITEM name="HPF_coef[18]" value="0x308A" desc=""/>
+            <ITEM name="HPF_coef[19]" value="0x30C9" desc=""/>
+            <ITEM name="HPF_coef[20]" value="0x30CB" desc=""/>
+            <ITEM name="HPF_coef[21]" value="0x2000" desc=""/>
+            <ITEM name="HPF_coef[22]" value="0x4EBC" desc=""/>
+            <ITEM name="HPF_coef[23]" value="0x4000" desc=""/>
+            <ITEM name="HPF_coef[24]" value="0xB1CD" desc=""/>
+            <ITEM name="HPF_coef[25]" value="0x67F4" desc=""/>
+            <ITEM name="HPF_coef[26]" value="0x4210" desc=""/>
+            <ITEM name="HPF_coef[27]" value="0xCE20" desc=""/>
+            <ITEM name="HPF_coef[28]" value="0x1000" desc=""/>
+            <ITEM name="HPF_coef[29]" value="0x59BC" desc=""/>
+            <ITEM name="HPF_coef[30]" value="0x4000" desc=""/>
+            <ITEM name="HPF_coef[31]" value="0x31BC" desc=""/>
+            <ITEM name="HPF_coef[32]" value="0x6714" desc=""/>
+            <ITEM name="HPF_coef[33]" value="0x59BC" desc=""/>
+            <ITEM name="HPF_coef[34]" value="0xD563" desc=""/>
+            <ITEM name="HPF_coef[35]" value="0x7FFF" desc=""/>
+        </ITEM>
+        <ITEM name="LPF_coef" type="ARRAY" subtype="SHORT" count="16" desc="">
+            <ITEM name="LPF_coef[0]" value="0x7FFF" desc=""/>
+            <ITEM name="LPF_coef[1]" value="0x3831" desc=""/>
+            <ITEM name="LPF_coef[2]" value="0x4000" desc=""/>
+            <ITEM name="LPF_coef[3]" value="0x8FB8" desc=""/>
+            <ITEM name="LPF_coef[4]" value="0x740F" desc=""/>
+            <ITEM name="LPF_coef[5]" value="0x3831" desc=""/>
+            <ITEM name="LPF_coef[6]" value="0xCAE5" desc=""/>
+            <ITEM name="LPF_coef[7]" value="0x7FFF" desc=""/>
+            <ITEM name="LPF_coef[8]" value="0x4000" desc=""/>
+            <ITEM name="LPF_coef[9]" value="0x4000" desc=""/>
+            <ITEM name="LPF_coef[10]" value="0x807A" desc=""/>
+            <ITEM name="LPF_coef[11]" value="0x7D97" desc=""/>
+            <ITEM name="LPF_coef[12]" value="0x4000" desc=""/>
+            <ITEM name="LPF_coef[13]" value="0xC1A6" desc=""/>
+            <ITEM name="LPF_coef[14]" value="0x7FFF" desc=""/>
+        </ITEM>
+    </ITEM>
+    <ITEM name="dsp_uart_struct" type="STRUCT" desc="">
+        <ITEM name="uart_init_ckd0low" type="SHORT" value="0x4E" desc=""/>
+    </ITEM>
+    <ITEM name="deep_sleep_struct" type="STRUCT" desc="">
+        <ITEM name="calibration_cycle" type="SHORT" value="0x9" desc=""/>
+        <ITEM name="idle_frames_after_sleep" type="SHORT" value="0x1" desc=""/>
+        <ITEM name="enable_dsp_sleep" type="SHORT" value="0x1" desc=""/>
+        <ITEM name="calibration_duration" type="SHORT" value="0xC" desc=""/>
+        <ITEM name="sleep_frames_in_deact" type="SHORT" value="0x32" desc=""/>
+    </ITEM>
+    <ITEM name="log_switch_struct" type="STRUCT" desc="">
+        <ITEM name="DSP_log_switch" type="SHORT" value="0x1" desc=""/>
+    </ITEM>
+    <ITEM name="dummy_pch_struct" type="STRUCT" desc="">
+        <ITEM name="reserve_word" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="enable_dummy_pch" type="SHORT" value="0x1B5" desc="bit0:dummy pch enable;bit1:idle mode change freq to 12M/36M"/>
+    </ITEM>
+    <ITEM name="dynamic_RF_ctrl_struct" type="STRUCT" desc="">
+        <ITEM name="rx_on_index" type="SHORT" value="0xE" desc=""/>
+        <ITEM name="pa_on_index" type="SHORT" value="0x11" desc=""/>
+        <ITEM name="normal_search_action_table" type="ARRAY" subtype="SHORT" count="13" desc="">
+            <ITEM name="normal_search_action_table[0]" value="0x5003" desc=""/>
+            <ITEM name="normal_search_action_table[1]" value="0x4804" desc=""/>
+            <ITEM name="normal_search_action_table[2]" value="0x3007" desc=""/>
+            <ITEM name="normal_search_action_table[3]" value="0x1007" desc=""/>
+            <ITEM name="normal_search_action_table[4]" value="0x1007" desc=""/>
+            <ITEM name="normal_search_action_table[5]" value="0x1007" desc=""/>
+            <ITEM name="normal_search_action_table[6]" value="0x100A" desc="switch on"/>
+            <ITEM name="normal_search_action_table[7]" value="0x1007" desc=""/>
+            <ITEM name="normal_search_action_table[8]" value="0x10C8" desc=""/>
+            <ITEM name="normal_search_action_table[9]" value="0x1007" desc=""/>
+            <ITEM name="normal_search_action_table[10]" value="0xD007" desc=""/>
+            <ITEM name="normal_search_action_table[11]" value="0x8807" desc=""/>
+            <ITEM name="normal_search_action_table[12]" value="0x7" desc=""/>
+        </ITEM>
+        <ITEM name="last_search_action_table" type="ARRAY" subtype="SHORT" count="8" desc="">
+            <ITEM name="last_search_action_table[0]" value="0x0" desc=""/>
+            <ITEM name="last_search_action_table[1]" value="0x0" desc=""/>
+            <ITEM name="last_search_action_table[2]" value="0x0" desc=""/>
+            <ITEM name="last_search_action_table[3]" value="0x0" desc=""/>
+            <ITEM name="last_search_action_table[4]" value="0x0" desc=""/>
+            <ITEM name="last_search_action_table[5]" value="0x0" desc=""/>
+            <ITEM name="last_search_action_table[6]" value="0x0" desc=""/>
+            <ITEM name="last_search_action_table[7]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="stop_search_action_table" type="ARRAY" subtype="SHORT" count="11" desc="">
+            <ITEM name="stop_search_action_table[0]" value="0x4807" desc=""/>
+            <ITEM name="stop_search_action_table[1]" value="0x8007" desc=""/>
+            <ITEM name="stop_search_action_table[2]" value="0x8007" desc=""/>
+            <ITEM name="stop_search_action_table[3]" value="0xD003" desc=""/>
+            <ITEM name="stop_search_action_table[4]" value="0x1005" desc=""/>
+            <ITEM name="stop_search_action_table[5]" value="0x4005" desc=""/>
+            <ITEM name="stop_search_action_table[6]" value="0x5003" desc=""/>
+            <ITEM name="stop_search_action_table[7]" value="0xD003" desc=""/>
+            <ITEM name="stop_search_action_table[8]" value="0x7" desc=""/>
+            <ITEM name="stop_search_action_table[9]" value="0x0" desc=""/>
+            <ITEM name="stop_search_action_table[10]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="tch_search_action_table" type="ARRAY" subtype="SHORT" count="20" desc="">
+            <ITEM name="tch_search_action_table[0]" value="0x5003" desc=""/>
+            <ITEM name="tch_search_action_table[1]" value="0x4804" desc=""/>
+            <ITEM name="tch_search_action_table[2]" value="0x3007" desc=""/>
+            <ITEM name="tch_search_action_table[3]" value="0x1007" desc=""/>
+            <ITEM name="tch_search_action_table[4]" value="0x100A" desc=""/>
+            <ITEM name="tch_search_action_table[5]" value="0x1007" desc=""/>
+            <ITEM name="tch_search_action_table[6]" value="0x10C8" desc=""/>
+            <ITEM name="tch_search_action_table[7]" value="0x1007" desc=""/>
+            <ITEM name="tch_search_action_table[8]" value="0xD007" desc=""/>
+            <ITEM name="tch_search_action_table[9]" value="0x8807" desc=""/>
+            <ITEM name="tch_search_action_table[10]" value="0x8F50" desc=""/>
+            <ITEM name="tch_search_action_table[11]" value="0x8F50" desc=""/>
+            <ITEM name="tch_search_action_table[12]" value="0x8A70" desc=""/>
+            <ITEM name="tch_search_action_table[13]" value="0x879E" desc=""/>
+            <ITEM name="tch_search_action_table[14]" value="0xD003" desc=""/>
+            <ITEM name="tch_search_action_table[15]" value="0x1005" desc=""/>
+            <ITEM name="tch_search_action_table[16]" value="0x4005" desc=""/>
+            <ITEM name="tch_search_action_table[17]" value="0x5003" desc=""/>
+            <ITEM name="tch_search_action_table[18]" value="0x7" desc=""/>
+            <ITEM name="tch_search_action_table[19]" value="0x0" desc=""/>
+        </ITEM>
+        <ITEM name="dsp_register_init_T" type="STRUCT" desc="">
+            <ITEM name="init_register_num" type="SHORT" value="0xA" desc=""/>
+            <ITEM name="register_value" type="ARRAY" subtype="SHORT" count="200" desc="">
+                <ITEM name="register_value[0]" value="0x18" desc=""/>
+                <ITEM name="register_value[1]" value="0x1F" desc=""/>
+                <ITEM name="register_value[2]" value="0x26" desc=""/>
+                <ITEM name="register_value[3]" value="0x2C" desc=""/>
+                <ITEM name="register_value[4]" value="0x3C" desc=""/>
+                <ITEM name="register_value[5]" value="0x3F" desc=""/>
+                <ITEM name="register_value[6]" value="0x41" desc=""/>
+                <ITEM name="register_value[7]" value="0x48" desc=""/>
+                <ITEM name="register_value[8]" value="0x4F" desc=""/>
+                <ITEM name="register_value[9]" value="0x50" desc=""/>
+                <ITEM name="register_value[10]" value="0x0" desc=""/>
+                <ITEM name="register_value[11]" value="0x0" desc=""/>
+                <ITEM name="register_value[12]" value="0x0" desc=""/>
+                <ITEM name="register_value[13]" value="0x0" desc=""/>
+                <ITEM name="register_value[14]" value="0x0" desc=""/>
+                <ITEM name="register_value[15]" value="0x0" desc=""/>
+                <ITEM name="register_value[16]" value="0x0" desc=""/>
+                <ITEM name="register_value[17]" value="0x0" desc=""/>
+                <ITEM name="register_value[18]" value="0x0" desc=""/>
+                <ITEM name="register_value[19]" value="0x0" desc=""/>
+                <ITEM name="register_value[20]" value="0x8005" desc=""/>
+                <ITEM name="register_value[21]" value="0x8046" desc=""/>
+                <ITEM name="register_value[22]" value="0x9209" desc=""/>
+                <ITEM name="register_value[23]" value="0x924A" desc=""/>
+                <ITEM name="register_value[24]" value="0x928B" desc=""/>
+                <ITEM name="register_value[25]" value="0x92CC" desc=""/>
+                <ITEM name="register_value[26]" value="0x930D" desc=""/>
+                <ITEM name="register_value[27]" value="0x934E" desc=""/>
+                <ITEM name="register_value[28]" value="0xA222" desc=""/>
+                <ITEM name="register_value[29]" value="0xA263" desc=""/>
+                <ITEM name="register_value[30]" value="0xA2A4" desc=""/>
+                <ITEM name="register_value[31]" value="0xA326" desc=""/>
+                <ITEM name="register_value[32]" value="0xA2E5" desc=""/>
+                <ITEM name="register_value[33]" value="0xB089" desc=""/>
+                <ITEM name="register_value[34]" value="0xB0CA" desc=""/>
+                <ITEM name="register_value[35]" value="0x0" desc=""/>
+                <ITEM name="register_value[36]" value="0x0" desc=""/>
+                <ITEM name="register_value[37]" value="0x0" desc=""/>
+                <ITEM name="register_value[38]" value="0x0" desc=""/>
+                <ITEM name="register_value[39]" value="0x0" desc=""/>
+                <ITEM name="register_value[40]" value="0x0" desc=""/>
+                <ITEM name="register_value[41]" value="0x0" desc=""/>
+                <ITEM name="register_value[42]" value="0x0" desc=""/>
+                <ITEM name="register_value[43]" value="0x0" desc=""/>
+                <ITEM name="register_value[44]" value="0x0" desc=""/>
+                <ITEM name="register_value[45]" value="0x0" desc=""/>
+                <ITEM name="register_value[46]" value="0x0" desc=""/>
+                <ITEM name="register_value[47]" value="0x0" desc=""/>
+                <ITEM name="register_value[48]" value="0x0" desc=""/>
+                <ITEM name="register_value[49]" value="0x0" desc=""/>
+                <ITEM name="register_value[50]" value="0x0" desc=""/>
+                <ITEM name="register_value[51]" value="0x0" desc=""/>
+                <ITEM name="register_value[52]" value="0x0" desc=""/>
+                <ITEM name="register_value[53]" value="0x0" desc=""/>
+                <ITEM name="register_value[54]" value="0x0" desc=""/>
+                <ITEM name="register_value[55]" value="0x0" desc=""/>
+                <ITEM name="register_value[56]" value="0x0" desc=""/>
+                <ITEM name="register_value[57]" value="0x0" desc=""/>
+                <ITEM name="register_value[58]" value="0x0" desc=""/>
+                <ITEM name="register_value[59]" value="0x0" desc=""/>
+                <ITEM name="register_value[60]" value="0x0" desc=""/>
+                <ITEM name="register_value[61]" value="0x0" desc=""/>
+                <ITEM name="register_value[62]" value="0x0" desc=""/>
+                <ITEM name="register_value[63]" value="0x0" desc=""/>
+                <ITEM name="register_value[64]" value="0x0" desc=""/>
+                <ITEM name="register_value[65]" value="0x0" desc=""/>
+                <ITEM name="register_value[66]" value="0x0" desc=""/>
+                <ITEM name="register_value[67]" value="0x0" desc=""/>
+                <ITEM name="register_value[68]" value="0x0" desc=""/>
+                <ITEM name="register_value[69]" value="0x0" desc=""/>
+                <ITEM name="register_value[70]" value="0x0" desc=""/>
+                <ITEM name="register_value[71]" value="0x0" desc=""/>
+                <ITEM name="register_value[72]" value="0x0" desc=""/>
+                <ITEM name="register_value[73]" value="0x0" desc=""/>
+                <ITEM name="register_value[74]" value="0x0" desc=""/>
+                <ITEM name="register_value[75]" value="0x0" desc=""/>
+                <ITEM name="register_value[76]" value="0x0" desc=""/>
+                <ITEM name="register_value[77]" value="0x0" desc=""/>
+                <ITEM name="register_value[78]" value="0x0" desc=""/>
+                <ITEM name="register_value[79]" value="0x0" desc=""/>
+                <ITEM name="register_value[80]" value="0x0" desc=""/>
+                <ITEM name="register_value[81]" value="0x0" desc=""/>
+                <ITEM name="register_value[82]" value="0x0" desc=""/>
+                <ITEM name="register_value[83]" value="0x0" desc=""/>
+                <ITEM name="register_value[84]" value="0x0" desc=""/>
+                <ITEM name="register_value[85]" value="0x0" desc=""/>
+                <ITEM name="register_value[86]" value="0x0" desc=""/>
+                <ITEM name="register_value[87]" value="0x0" desc=""/>
+                <ITEM name="register_value[88]" value="0x0" desc=""/>
+                <ITEM name="register_value[89]" value="0x0" desc=""/>
+                <ITEM name="register_value[90]" value="0x0" desc=""/>
+                <ITEM name="register_value[91]" value="0x0" desc=""/>
+                <ITEM name="register_value[92]" value="0x0" desc=""/>
+                <ITEM name="register_value[93]" value="0x0" desc=""/>
+                <ITEM name="register_value[94]" value="0x0" desc=""/>
+                <ITEM name="register_value[95]" value="0x0" desc=""/>
+                <ITEM name="register_value[96]" value="0x0" desc=""/>
+                <ITEM name="register_value[97]" value="0x0" desc=""/>
+                <ITEM name="register_value[98]" value="0x0" desc=""/>
+                <ITEM name="register_value[99]" value="0x0" desc=""/>
+                <ITEM name="register_value[100]" value="0x0" desc=""/>
+                <ITEM name="register_value[101]" value="0x0" desc=""/>
+                <ITEM name="register_value[102]" value="0x0" desc=""/>
+                <ITEM name="register_value[103]" value="0x0" desc=""/>
+                <ITEM name="register_value[104]" value="0x0" desc=""/>
+                <ITEM name="register_value[105]" value="0x0" desc=""/>
+                <ITEM name="register_value[106]" value="0x0" desc=""/>
+                <ITEM name="register_value[107]" value="0x0" desc=""/>
+                <ITEM name="register_value[108]" value="0x0" desc=""/>
+                <ITEM name="register_value[109]" value="0x0" desc=""/>
+                <ITEM name="register_value[110]" value="0x0" desc=""/>
+                <ITEM name="register_value[111]" value="0x0" desc=""/>
+                <ITEM name="register_value[112]" value="0x0" desc=""/>
+                <ITEM name="register_value[113]" value="0x0" desc=""/>
+                <ITEM name="register_value[114]" value="0x0" desc=""/>
+                <ITEM name="register_value[115]" value="0x0" desc=""/>
+                <ITEM name="register_value[116]" value="0x0" desc=""/>
+                <ITEM name="register_value[117]" value="0x0" desc=""/>
+                <ITEM name="register_value[118]" value="0x0" desc=""/>
+                <ITEM name="register_value[119]" value="0x0" desc=""/>
+                <ITEM name="register_value[120]" value="0x0" desc=""/>
+                <ITEM name="register_value[121]" value="0x0" desc=""/>
+                <ITEM name="register_value[122]" value="0x0" desc=""/>
+                <ITEM name="register_value[123]" value="0x0" desc=""/>
+                <ITEM name="register_value[124]" value="0x0" desc=""/>
+                <ITEM name="register_value[125]" value="0x0" desc=""/>
+                <ITEM name="register_value[126]" value="0x0" desc=""/>
+                <ITEM name="register_value[127]" value="0x0" desc=""/>
+                <ITEM name="register_value[128]" value="0x0" desc=""/>
+                <ITEM name="register_value[129]" value="0x0" desc=""/>
+                <ITEM name="register_value[130]" value="0x0" desc=""/>
+                <ITEM name="register_value[131]" value="0x0" desc=""/>
+                <ITEM name="register_value[132]" value="0x0" desc=""/>
+                <ITEM name="register_value[133]" value="0x0" desc=""/>
+                <ITEM name="register_value[134]" value="0x0" desc=""/>
+                <ITEM name="register_value[135]" value="0x0" desc=""/>
+                <ITEM name="register_value[136]" value="0x0" desc=""/>
+                <ITEM name="register_value[137]" value="0x0" desc=""/>
+                <ITEM name="register_value[138]" value="0x0" desc=""/>
+                <ITEM name="register_value[139]" value="0x0" desc=""/>
+                <ITEM name="register_value[140]" value="0x0" desc=""/>
+                <ITEM name="register_value[141]" value="0x0" desc=""/>
+                <ITEM name="register_value[142]" value="0x0" desc=""/>
+                <ITEM name="register_value[143]" value="0x0" desc=""/>
+                <ITEM name="register_value[144]" value="0x0" desc=""/>
+                <ITEM name="register_value[145]" value="0x0" desc=""/>
+                <ITEM name="register_value[146]" value="0x0" desc=""/>
+                <ITEM name="register_value[147]" value="0x0" desc=""/>
+                <ITEM name="register_value[148]" value="0x0" desc=""/>
+                <ITEM name="register_value[149]" value="0x0" desc=""/>
+                <ITEM name="register_value[150]" value="0x0" desc=""/>
+                <ITEM name="register_value[151]" value="0x0" desc=""/>
+                <ITEM name="register_value[152]" value="0x0" desc=""/>
+                <ITEM name="register_value[153]" value="0x0" desc=""/>
+                <ITEM name="register_value[154]" value="0x0" desc=""/>
+                <ITEM name="register_value[155]" value="0x0" desc=""/>
+                <ITEM name="register_value[156]" value="0x0" desc=""/>
+                <ITEM name="register_value[157]" value="0x0" desc=""/>
+                <ITEM name="register_value[158]" value="0x0" desc=""/>
+                <ITEM name="register_value[159]" value="0x0" desc=""/>
+                <ITEM name="register_value[160]" value="0x0" desc=""/>
+                <ITEM name="register_value[161]" value="0x0" desc=""/>
+                <ITEM name="register_value[162]" value="0x0" desc=""/>
+                <ITEM name="register_value[163]" value="0x0" desc=""/>
+                <ITEM name="register_value[164]" value="0x0" desc=""/>
+                <ITEM name="register_value[165]" value="0x0" desc=""/>
+                <ITEM name="register_value[166]" value="0x0" desc=""/>
+                <ITEM name="register_value[167]" value="0x0" desc=""/>
+                <ITEM name="register_value[168]" value="0x0" desc=""/>
+                <ITEM name="register_value[169]" value="0x0" desc=""/>
+                <ITEM name="register_value[170]" value="0x0" desc=""/>
+                <ITEM name="register_value[171]" value="0x0" desc=""/>
+                <ITEM name="register_value[172]" value="0x0" desc=""/>
+                <ITEM name="register_value[173]" value="0x0" desc=""/>
+                <ITEM name="register_value[174]" value="0x0" desc=""/>
+                <ITEM name="register_value[175]" value="0x0" desc=""/>
+                <ITEM name="register_value[176]" value="0x0" desc=""/>
+                <ITEM name="register_value[177]" value="0x0" desc=""/>
+                <ITEM name="register_value[178]" value="0x0" desc=""/>
+                <ITEM name="register_value[179]" value="0x0" desc=""/>
+                <ITEM name="register_value[180]" value="0x0" desc=""/>
+                <ITEM name="register_value[181]" value="0x0" desc=""/>
+                <ITEM name="register_value[182]" value="0x0" desc=""/>
+                <ITEM name="register_value[183]" value="0x0" desc=""/>
+                <ITEM name="register_value[184]" value="0x0" desc=""/>
+                <ITEM name="register_value[185]" value="0x0" desc=""/>
+                <ITEM name="register_value[186]" value="0x0" desc=""/>
+                <ITEM name="register_value[187]" value="0x0" desc=""/>
+                <ITEM name="register_value[188]" value="0x0" desc=""/>
+                <ITEM name="register_value[189]" value="0x0" desc=""/>
+                <ITEM name="register_value[190]" value="0x0" desc=""/>
+                <ITEM name="register_value[191]" value="0x0" desc=""/>
+                <ITEM name="register_value[192]" value="0x0" desc=""/>
+                <ITEM name="register_value[193]" value="0x0" desc=""/>
+                <ITEM name="register_value[194]" value="0x0" desc=""/>
+                <ITEM name="register_value[195]" value="0x0" desc=""/>
+                <ITEM name="register_value[196]" value="0x0" desc=""/>
+                <ITEM name="register_value[197]" value="0x0" desc=""/>
+                <ITEM name="register_value[198]" value="0x0" desc=""/>
+                <ITEM name="register_value[199]" value="0x0" desc=""/>
+            </ITEM>
+        </ITEM>
+    </ITEM>
+    <ITEM name="control_switches" type="ARRAY" subtype="SHORT" count="10" desc="dsp used switches">
+        <ITEM name="control_switches[0]" value="0x1" desc="0: IR disabled;1:IR enabled"/>
+        <ITEM name="control_switches[1]" value="0x0" desc=""/>
+        <ITEM name="control_switches[2]" value="0xC050" desc=""/>
+        <ITEM name="control_switches[3]" value="0x0" desc=""/>
+        <ITEM name="control_switches[4]" value="0xCFFF" desc=""/>
+        <ITEM name="control_switches[5]" value="0xFFFC" desc=""/>
+        <ITEM name="control_switches[6]" value="0x1" desc="SAIC switch, '1' enable, '0' disable"/>
+        <ITEM name="control_switches[7]" value="0x1" desc="VAMOS switch: 1 - enable, 0 - disable"/>
+        <ITEM name="control_switches[8]" value="0x0" desc=""/>
+        <ITEM name="control_switches[9]" value="0x0" desc=""/>
+    </ITEM>
+    <ITEM name="Aero2_frequency_track_para" type="STRUCT" desc="">
+        <ITEM name="frequency_track_threshold" type="ARRAY" subtype="SHORT" count="10" desc="">
+            <ITEM name="frequency_track_threshold[0]" value="0x1C8" desc=""/>
+            <ITEM name="frequency_track_threshold[1]" value="0x390" desc=""/>
+            <ITEM name="frequency_track_threshold[2]" value="0x559" desc=""/>
+            <ITEM name="frequency_track_threshold[3]" value="0x722" desc=""/>
+            <ITEM name="frequency_track_threshold[4]" value="0x8EC" desc=""/>
+            <ITEM name="frequency_track_threshold[5]" value="0xAB6" desc=""/>
+            <ITEM name="frequency_track_threshold[6]" value="0xC82" desc=""/>
+            <ITEM name="frequency_track_threshold[7]" value="0xE4F" desc=""/>
+            <ITEM name="frequency_track_threshold[8]" value="0x101E" desc=""/>
+            <ITEM name="frequency_track_threshold[9]" value="0x11EE" desc=""/>
+        </ITEM>
+        <ITEM name="frequency_track_shift" type="SHORT" value="0x5" desc=""/>
+        <ITEM name="frequency_track_max_step" type="SHORT" value="0x9" desc=""/>
+    </ITEM>
+    <ITEM name="common_RF_param" type="STRUCT" desc="">
+        <ITEM name="rx_ctrl_word_num" type="SHORT" value="0x5" desc=""/>
+        <ITEM name="tx_ctrl_word_num" type="SHORT" value="0x5" desc=""/>
+        <ITEM name="tx_send_random_data_enable" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="afc_dac_length" type="SHORT" value="0xE" desc=""/>
+        <ITEM name="gain_index_step" type="SHORT" value="0x3" desc="RF new 3dB-gain step mode"/>
+        <ITEM name="agc_ctrl_step_num" type="SHORT" value="0x2C" desc=""/>
+    </ITEM>
+    <ITEM name="agc_saturate_threshold" type="SHORT" value="0xFFF3" desc=""/>
+    <ITEM name="agc_blownoise_threshold" type="SHORT" value="0xFFD4" desc=""/>
+    <ITEM name="rf_ctrl_param_0" type="SHORT" value="0x0" desc="bit 0, TX power reduction under maximal power level"/>
+    <ITEM name="rf_ctrl_param_1" type="SHORT" value="0x0" desc=""/>
+</ITEM>

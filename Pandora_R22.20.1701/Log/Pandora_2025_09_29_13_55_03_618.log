@@ -1,0 +1,12 @@
+[2025-09-29 13:55:03:618][DUT         ][3 - Information] Set Endian = 2
+[2025-09-29 13:55:03:634][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2025-09-29 13:55:03:634][DevMan      ][3 - Information] DeviceManager.dll,	 Version:8. 20. 16. 01, Vendor: UNISOC TECHNOLOGIES INC.
+[2025-09-29 13:55:23:071][DUT         ][3 - Information] Start to enter mode 0x98 by USB: target port = -1, TimeOut = 0, QuitSignal = 1
+[2025-09-29 13:55:23:071][DUT         ][5 - Verbose    ] CDevMode::run
+[2025-09-29 13:55:23:071][Pandora     ][3 - Information] please power on the dut in 120 seconds!
+[2025-09-29 13:55:24:033][Pandora     ][3 - Information] Entermode fail
+[2025-09-29 13:55:24:121][DUT         ][3 - Information] Load Modem V3 NV: nv = 1
+[2025-09-29 13:55:24:121][DUT         ][1 - Error      ] Device is not opened.
+[2025-09-29 13:55:24:124][DUT         ][5 - Verbose    ] Closing port, type = 3
+[2025-09-29 13:55:24:124][DUT         ][3 - Information] Close: device is not open
+[2025-09-29 13:55:33:997][DUT         ][5 - Verbose    ] DiagPhone is cleaned up.

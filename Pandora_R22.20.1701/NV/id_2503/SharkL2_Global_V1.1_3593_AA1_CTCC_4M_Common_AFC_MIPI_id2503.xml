@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ITEM name="AFC_cali_config" id="2503" type="STRUCT" desc="">
+    <ITEM name="AFC_version" type="SHORT" value="0x1" desc=""/>
+    <ITEM name="Crystal_type" type="SHORT" value="0x0" desc="0:DCXO,1:TCXO"/>
+    <ITEM name="Cali_freq" type="SHORT" value="0x3866" desc="default:902.4Mhz"/>
+    <ITEM name="reserved" type="SHORT" value="0x1" desc=""/>
+    <ITEM name="TCXO_CAL" type="STRUCT" desc="">
+        <ITEM name="AFC0" type="SHORT" value="0x674" desc=""/>
+        <ITEM name="AFC_K" type="SHORT" value="0xCF4" desc=""/>
+        <ITEM name="reserved0" type="SHORT" value="0x0" desc=""/>
+        <ITEM name="reserved1" type="SHORT" value="0x0" desc=""/>
+    </ITEM>
+    <ITEM name="DCXO_CAL" type="STRUCT" desc="">
+        <ITEM name="DCXO_CAFC_slope" type="SHORT" value="0x1308" desc=""/>
+        <ITEM name="CDAC" type="SHORT" value="0x1F" desc=""/>
+        <ITEM name="CAFC" type="SHORT" value="0x8019" desc=""/>
+        <ITEM name="reserved" type="SHORT" value="0x0" desc=""/>
+    </ITEM>
+</ITEM>
